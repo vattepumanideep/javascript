@@ -21,7 +21,7 @@ if (is_prime(num)) {
 
 function is_palindrome(s){
     var t=num;
-    var rev=0
+    var rev=0;
     while (t>0){
         var r=t%10;
         rev=rev*10+r;
@@ -40,4 +40,36 @@ if (is_palindrome(num)){
     console.log(num+"is a palindrome");
 }else{
     console.log(num +"is not a palidrome");
+}
+
+
+function is_armstrong(s){
+    var c=0;
+    var t=num;
+    var dc=0;
+    while (t>0){
+        r=t%10;
+        dc+=1;
+        t=Math.floor(t/10);
+    var su=0;
+    var t=i;
+
+    while(t>0){
+        r=t%10;
+        su+=r**dc;
+        t=Math.floor(t/10);
+    }
+    }
+    if (su==i){
+        c+=1;
+        return true;
+    }
+}
+
+var num=371;
+
+if (is_armstrong(num)){
+    console.log(num+"is a armstrong");
+}else{
+    console.log(num+"not a armstrong");
 }
